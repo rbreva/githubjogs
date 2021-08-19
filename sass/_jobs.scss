@@ -1,0 +1,106 @@
+.jobs {
+  padding: 0px 0px 0px 15px;
+
+  section {
+    background: #ffffff;
+    margin-bottom: 32px;
+    border-radius: 4px;
+    padding: 12px;
+    display: grid;
+    grid-template-columns: 90px 1fr;
+    cursor: pointer;
+    box-shadow: 2px 1px 3px 0px #0000000d;
+
+    &:hover {
+      box-shadow: 2px 1px 3px 0px #00000026;
+    }
+
+    .details {
+      display: flex;
+      justify-content: space-between;
+      padding-left: 12px;
+
+      h2 {
+        font-size: 1.8rem;
+        font-style: normal;
+        font-weight: 400;
+        padding: 12px 0;
+        color: #334680;
+      }
+
+      button {
+        background: #ffffff;
+        border: 1px solid #334680;
+        border-radius: 4px;
+        padding: 3px;
+        font-family: Roboto;
+        font-size: 1.2rem;
+        font-style: normal;
+        font-weight: 700;
+      }
+
+      .place_day {
+        display: flex;
+        align-items: flex-end;
+
+        div {
+          font-size: 1.2rem;
+          font-style: normal;
+          font-weight: 500;
+          color: #b9bdcf;
+
+          &:last-child {
+            margin-left: 25px;
+          }
+        }
+      }
+    }
+
+    .card .not_found {
+      width: 90px;
+      height: 90px;
+      background: #f2f2f2;
+      border-radius: 4px;
+      font-family: Roboto;
+      font-size: 1.1rem;
+      font-style: normal;
+      font-weight: 500;
+      color: #bdbdbd;
+      text-align: center;
+      padding: 38px 10px;
+    }
+  }
+
+  .pagination {
+    display: flex;
+    justify-content: flex-end;
+
+    li {
+      color: #b7bcce;
+      width: 36px;
+      height: 36px;
+      border: 1px solid #b7bcce;
+      border-radius: 4px;
+      padding: 11px 0;
+      font-size: 1.2rem;
+      margin-left: 10px;
+      text-align: center;
+
+      &:hover {
+        color: #1e86ff;
+        border: 1px solid #1e86ff;
+      }
+
+      &.active {
+        background: #1e86ff;
+        color: #fff;
+        border: 1px solid #1e86ff;
+      }
+
+      &.inactive {
+        border: none;
+        font-weight: bold;
+      }
+    }
+  }
+}

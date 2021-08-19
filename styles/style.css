@@ -1,0 +1,384 @@
+/*------------------Globlales-----------------*/
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/poppins/Poppins-Light.woff2") format("woff2"),
+    url("../fonts/poppins/Poppins-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/poppins/Poppins-Bold.woff2") format("woff2"),
+    url("../fonts/poppins/Poppins-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/roboto/Roboto-BoldItalic.woff2") format("woff2"),
+    url("../fonts/roboto/Roboto-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/roboto/Roboto-Light.woff2") format("woff2"),
+    url("../fonts/roboto/Roboto-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/roboto/Roboto-Bold.woff2") format("woff2"),
+    url("../fonts/roboto/Roboto-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/roboto/Roboto-Regular.woff2") format("woff2"),
+    url("../fonts/roboto/Roboto-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Roboto";
+  font-size: 1.6rem;
+  background: #f6f7fb;
+}
+
+h1 {
+  font-size: 3.6rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 14px;
+  color: #334680;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+label {
+  font-family: "Poppins";
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 500;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  width: 18px;
+  margin: 0px 12px;
+}
+
+::placeholder {
+  color: #b9bdcf;
+}
+
+.fa-globe-americas,
+.fa-suitcase {
+  color: #b9bdcf;
+}
+
+/*------------------layout---------------*/
+
+.wrapper {
+  width: 100%;
+  max-width: 1201px;
+  margin: auto;
+  padding: 12px;
+}
+
+/*----------------header-------------------*/
+
+header {
+  padding: 40px 0px;
+}
+
+header h1 {
+  font-size: 2.4rem;
+  font-family: "poppins";
+  font-weight: bold;
+}
+
+header .light {
+  font-weight: 400;
+}
+
+/*---------------------banner-------------------*/
+
+.banner {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.banner img {
+  object-fit: cover;
+}
+
+.banner form {
+  position: absolute;
+  top: 40px;
+  width: 95%;
+  max-width: 790px;
+  text-align: center;
+  background: #ffffff;
+  padding: 4px;
+  border-radius: 4px;
+  display: grid;
+  grid-template-columns: 30px 1fr 146px;
+  align-items: center;
+  overflow: hidden;
+}
+
+.banner form input {
+  border: none;
+  width: 100%;
+  padding: 5px;
+}
+
+.banner form button {
+  background-color: #1e86ff;
+  width: 100%;
+  height: 47px;
+  border: none;
+  border-radius: 4px;
+  color: #ffffff;
+  font-size: 1.6rem;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  margin-top: 40px;
+}
+
+aside {
+  padding: 0px 15px 0 0;
+}
+
+aside .line {
+  margin-bottom: 30px;
+}
+
+aside .line .location {
+  display: grid;
+  grid-template-columns: 35px 1fr;
+  align-items: center;
+  border-radius: 4px;
+  background: #ffffff;
+  padding: 15px 13px;
+}
+
+aside h2 {
+  font-family: "Poppins";
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 700;
+  color: #b9bdcf;
+  margin-bottom: 20px;
+}
+
+aside input {
+  width: 100%;
+  border: none;
+}
+
+aside li {
+  padding: 8px 0;
+}
+
+.jobs {
+  padding: 0px 0px 0px 15px;
+}
+
+.jobs section {
+  background: #ffffff;
+  margin-bottom: 32px;
+  border-radius: 4px;
+  padding: 12px;
+  display: grid;
+  grid-template-columns: 90px 1fr;
+  cursor: pointer;
+  box-shadow: 2px 1px 3px 0px #0000000d;
+}
+
+.jobs section:hover {
+  box-shadow: 2px 1px 3px 0px #00000026;
+}
+
+.jobs section .details {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 12px;
+}
+
+.jobs section .details h2 {
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 400;
+  padding: 12px 0;
+  color: #334680;
+}
+
+.jobs section .details button {
+  background: #ffffff;
+  border: 1px solid #334680;
+  border-radius: 4px;
+  padding: 3px;
+  font-family: Roboto;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.jobs section .details .place_day {
+  display: flex;
+  align-items: flex-end;
+}
+
+.jobs section .details .place_day div {
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 500;
+  color: #b9bdcf;
+}
+
+.jobs section .details .place_day div:last-child {
+  margin-left: 25px;
+}
+
+.jobs section .card .not_found {
+  width: 90px;
+  height: 90px;
+  background: #f2f2f2;
+  border-radius: 4px;
+  font-family: Roboto;
+  font-size: 1.1rem;
+  font-style: normal;
+  font-weight: 500;
+  color: #bdbdbd;
+  text-align: center;
+  padding: 38px 10px;
+}
+
+.jobs .pagination {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.jobs .pagination li {
+  color: #b7bcce;
+  width: 36px;
+  height: 36px;
+  border: 1px solid #b7bcce;
+  border-radius: 4px;
+  padding: 11px 0;
+  font-size: 1.2rem;
+  margin-left: 10px;
+  text-align: center;
+}
+
+.jobs .pagination li:hover {
+  color: #1e86ff;
+  border: 1px solid #1e86ff;
+}
+
+.jobs .pagination li.active {
+  background: #1e86ff;
+  color: #fff;
+  border: 1px solid #1e86ff;
+}
+
+.jobs .pagination li.inactive {
+  border: none;
+  font-weight: bold;
+}
+
+footer {
+  margin-top: 50px;
+  text-align: center;
+  font-family: "Poppins";
+  font-size: 1.3rem;
+  font-style: normal;
+  font-weight: initial;
+  color: #b9bdcf;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  header {
+    padding: 10px 0px 40px 0px;
+  }
+
+  .banner form {
+    grid-template-columns: 30px 1fr 104px;
+  }
+
+  main {
+    grid-template-columns: none;
+  }
+
+  aside {
+    padding: 0 0 20px 0;
+  }
+
+  .jobs section .details {
+    flex-direction: column;
+  }
+
+  .jobs section .details .place_day {
+    justify-content: space-around;
+    padding: 10px 0 5px 0;
+  }
+
+  .jobs .pagination {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .banner form {
+    grid-template-columns: 30px 1fr 1fr;
+  }
+}

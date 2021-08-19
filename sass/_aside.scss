@@ -1,0 +1,34 @@
+aside {
+  padding: 0px 15px 0 0;
+
+  .line {
+    margin-bottom: 30px;
+
+    .location {
+      display: grid;
+      grid-template-columns: 35px 1fr;
+      align-items: center;
+      border-radius: 4px;
+      background: #ffffff;
+      padding: 15px 13px;
+    }
+  }
+
+  h2 {
+    font-family: "Poppins";
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 700;
+    color: #b9bdcf;
+    margin-bottom: 20px;
+  }
+
+  input {
+    width: 100%;
+    border: none;
+  }
+
+  li {
+    padding: 8px 0;
+  }
+}

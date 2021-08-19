@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Github Jobs</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <h1>Github <span class="light">Jobs</span></h1>
+        </header>
+        <section class="banner">
+            <img src="images/background.jpg">
+            <form>
+                <div><i class="fas fa-suitcase"></i></div>
+                <input type="text" id="search" placeholder=" Title, companies, expertise or benefits">
+                <button>Search</button>
+            </form>
+        </section>
+        <main>
+            <aside>
+                <div class="line">
+                    <input type="checkbox" id="fulltime"><label for="fulltime">Full time</label>
+                </div>
+                <div class="line"> 
+                <h2>LOCATION</h2>
+                    <div class="location">
+                        <i class="fas fa-globe-americas"></i>
+                        <input type="text" id="location" placeholder="City, state, zip code or country">
+                    </div>
+                </div>
+                <ul>
+                    <li><input type="radio" id="london" name="city"><label for="london">London</label></li>
+                    <li><input type="radio" id="amsterdam" name="city"><label for="amsterdam">Amsterdam</label></li>
+                    <li><input type="radio" id="newyork" name="city"><label for="newyork">New York</label></li>
+                    <li><input type="radio" id="berlin" name="city"><label for="berlin">Berlin</label></li>
+                </ul>
+            </aside>
+            <div class="jobs">
+                <section>
+                    <div class="card">
+                        <div><img src="images/ico_01.png" alt=""></div>
+                    </div>
+                    <div class="details">
+                        <div class="enterprice">
+                            <h3>Kasisto</h3>
+                            <h2>Front-End Software Engineer</h2>
+                            <button>Full time</button>
+                        </div>
+                        <div class="place_day">
+                            <div><i class="fas fa-globe-americas"></i> New York</div>
+                            <div><i class="far fa-clock"></i> 5 days ago</div> 
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="card">
+                        <div><img src="images/ico_02.png" alt=""></div>
+                    </div>
+                    <div class="details">
+                        <div class="enterprice">
+                            <h3>Lev</h3>
+                            <h2>Senior Engineer</h2>
+                            <button>Full time</button>
+                        </div>
+                        <div class="place_day">
+                            <div><i class="fas fa-globe-americas"></i> NY or LA</div>
+                            <div><i class="far fa-clock"></i> 5 days ago</div> 
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="card">
+                        <div><img src="images/ico_03.png" alt=""></div>
+                    </div>
+                    <div class="details">
+                        <div class="enterprice">
+                            <h3>Sesame</h3>
+                            <h2>Software engineer (back end)</h2>
+                            <button>Full time</button>
+                        </div>
+                        <div class="place_day">
+                            <div><i class="fas fa-globe-americas"></i> New York; Berlin</div>
+                            <div><i class="far fa-clock"></i> 5 days ago</div> 
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="card">
+                        <div class="not_found">not found</div>
+                    </div>
+                    <div class="details">
+                        <div class="enterprice">
+                            <h3></i> New York University</h3>
+                            <h2>FTechnology Solutions Developer</h2>
+                            <button>Full time</button>
+                        </div>
+                        <div class="place_day">
+                            <div><i class="fas fa-globe-americas"></i> New York</div>
+                            <div><i class="far fa-clock"></i> 5 days ago</div> 
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="card">
+                        <div class="not_found">not found</div>
+                    </div>
+                    <div class="details">
+                        <div class="enterprice">
+                            <h3>Paddle</h3>
+                            <h2>Senior Python Software Engineer</h2>
+                            <button>Full time</button>
+                        </div>
+                        <div class="place_day">
+                            <div><i class="fas fa-globe-americas"></i> New York</div>
+                            <div><i class="far fa-clock"></i> 5 days ago</div> 
+                        </div>
+                    </div>
+                </section>
+                <ul class="pagination">
+                    <li><a href="#"><</a></li>
+                    <li><a href="#">1</a></li>
+                    <li class="active"><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li class="inactive"><a href="#">...</a></li>
+                    <li><a href="#">10</a></li>
+                    <li><a href="#">></a></li>
+                </ul>
+            </div>
+        </main>
+    </div>
+    <footer>created by username - devChallenges.io</footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js" integrity="sha512-Tn2m0TIpgVyTzzvmxLNuqbSJH3JP8jm+Cy3hvHrW7ndTDcJ1w5mBiksqDBb8GpE2ksktFvDB/ykZ0mDpsZj20w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+</html>

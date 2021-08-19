@@ -1,0 +1,36 @@
+@media screen and (max-width: 600px) {
+    header {
+      padding: 10px 0px 40px 0px;
+    }
+  
+    .banner form {
+      grid-template-columns: 30px 1fr 104px;
+    }
+  
+    main {
+      grid-template-columns: none;
+    }
+  
+    aside {
+      padding: 0 0 20px 0;
+    }
+  
+    .jobs section .details {
+      flex-direction: column;
+    }
+  
+    .jobs section .details .place_day {
+      justify-content: space-around;
+      padding: 10px 0 5px 0;
+    }
+  
+    .jobs .pagination {
+      display: none;
+    }
+  }
+  
+  @media screen and (max-width: 360px) {
+    .banner form {
+      grid-template-columns: 30px 1fr 1fr;
+    }
+  }
